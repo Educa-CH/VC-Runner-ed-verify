@@ -133,9 +133,9 @@ def loading():
 @app.route('/success')
 def success():
     if session['lang'] == 'de':
-        prompt = 'Ihre Anmeldung wurde erfolgreich verifiziert. Herzlich Willkommen!'
+        prompt = 'Gratulation, Ihr digitaler Nachweis wurde erfolgreich verifiziert.'
     elif session['lang'] == 'fr':
-        prompt = 'Votre inscription a été vérifiée avec succès. Bienvenue!'
+        prompt = 'Félicitations, votre justificatif numérique a été vérifiée avec succès.'
     return render_template('success.html', prompt=prompt)        
   
 
